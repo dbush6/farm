@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Fiona's Farm</title>
+        <meta name="viewport" content="width=device-width, initial-scale">
+        <link href="https://fonts.googleapis.com/css2?family=Habibi&family=Irish+Grover&display=swap" rel="stylesheet">
+        <style>
+/* -------------------- IMPORTED FONTS -------------------------------------- */
+        
+/*-------------------- CSS REST ---------------------------------------------------*/
+
+
+
+/* -------------------- ROOT VARIABLES --------------------------------------- */
+
+
+
+/* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
+html {
+    box-sizing: border-box;
+}
+*,*:before, *:after {
+    box-sizing: inherit;
+}
+img {
+    max-width: 100%;
+}
+@media (min-width: 428px) {
+    .container1 {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "apples oranges peaches strawberries blueberries raspberries cherries pears plums grapes watermelons cantaloupes";
+    }
+    .container2 {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "broccoli lettuce eggplant spinach beansprout peas bellpepper carrot potato cucumber tomato radish";
+    }
+}
+
+/*-------------------- MEDIA QUERY (medium) --------------------------------*/
+@media (min-width: 834px) {
+    .container1 {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "apples oranges" "peaches strawberries" "blueberries raspberries" "cherries pears" "plums grapes" "watermelons cantaloupes";
+    }
+    .container2 {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "broccoli lettuce" "eggplant spinach" "beansprout peas" "bellpepper carrot" "potato cucumber" "tomato radish";
+    }
+}
+
+
+/*-------------------- MEDIA QUERY (large) ------------------------------------*/
+@media (min-width: 1280px) {
+    .container1 {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "apples oranges peaches" "strawberries blueberries raspberries" "cherries pears plums" "grapes watermelons cantaloupes";
+    }
+    .container2 {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "broccoli lettuce eggplant" "spinach beansprout peas" "bellpepper carrot potato" "cucumber tomato radish";
+    }
+}
+
+
+/*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
+@media (min-width: 1440px) {
+    .container1 {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "apples oranges peaches strawberries" "blueberries raspberries cherries pears" "plums grapes watermelons cantaloupes";
+    }
+    .container2 {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "broccoli lettuce eggplant spinach" "beansprout peas bellpepper carrot" "potato cucumber tomato radish";
+    }
+}
+.apples, .oranges, .peaches, .strawberries, .blueberries, .raspberries, .cherries, .pears, .plums, .grapes, .watermelons, .cantaloupes {
+    text-align: center;
+}
+
+header {
+    background-color: #06a816;
+    color: #ffffff;
+    width: 100%;
+    padding: 20px;
+}
+footer {
+    display: flex;
+    color: #06a816;
+    justify-content: center;
+}
+.contact {
+    background-color: #06a816;
+    color: #ffffff;
+    padding: 10px;
+}
+.text {
+    font-family: "My Font", "Habibi";
+}
+#container1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#container2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.item {
+    width: 200px;
+}
+img {
+    padding: 20px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+}
+nav li {
+    display: inline-block;
+    background-color: #e75d02;
+    color: #ffffff;
+    text-align: center;
+    width: 150px;
+    padding: 5px;
+    border: 5px;
+    border-color: #ffffff;
+    border-radius: 5%;
+}
+nav a {
+    text-decoration: none;
+}
+h1 {
+    font-size: 2.5em;
+    font-family: "My Font", "Irish Grover";
+    text-shadow: 0.1rem 0.1rem #000000;
+}
+h2 {
+    font-size: 1.75em;
+    font-family: "My Font", "Irish Grover";
+}
+h3 {
+    font-family: "My Font", "Irish Grover";
+}
+h3, text {
+    font-size: 1.25em;
+}
+
+main h3 {
+    display: flex;
+    justify-content: center;
+}
+.btn {
+    background-color: #e75d02;
+    display: inline-block;
+    position: fixed;
+    bottom: 50px;
+    right: 5px;
+    padding: 10px;
+    border: 5px;
+    border-color: #ffffff;
+    border-radius: 5%;
+}
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Fiona's Farm</h1>
+            <p class="text">Fresh from our farm to your family table</p>
+        </header>
+        <nav class="text">
+            <ul>
+                <li><a href="#" title="Nav 1">Fruits</a></li>
+                <li><a href="#" title="Nav 2">Vegetables</a></li>
+            </ul>
+        </nav>
+    <main>
+            <section class="fruits">
+                <h2>Fruits</h2>
+                <p class="text">Welcome to our farm, where we take pride in growing a variety of delicious and nutritious fruits. Our commitment to sustainable farming practices ensures that every bite of our fruit is bursting with natural flavor and goodness. From the orchard to your table, we offer a selection of fresh, hand-picked fruits that are perfect for snacking, baking, and cooking. Experience the taste of nature's bounty with our premium quality fruits.</p>
+
+                <h3>Fruits for Sale</h3>
+                <div class="text">
+                    <div id="container1">
+
+                    <div class="item apples">
+                    <img src="images/apples.png" alt="apple picture">
+                    Apples</div>
+
+                    <div class="item oranges">
+                    <img src="images/oranges.png" alt="oranges picture">
+                    Oranges</div>
+
+                    <div class="item peaches">
+                    <img src="images/peaches.png" alt="peaches picture">
+                    Peaches</div>
+
+                    <div class="item strawberries">
+                    <img src="images/strawberries.png" alt="strawberries picture">
+                    Strawberries</div>
+
+                    <div class="item blueberries">
+                    <img src="images/blueberries.png" alt="blueberries picture">
+                    Blueberries</div>
+
+                    <div class="item raspberries">
+                    <img src="images/raspberries.png" alt="raspberries picture">
+                    Raspberries</div>
+
+                    <div class="item cherries">
+                    <img src="images/cherries.png" alt="cherries picture">
+                    Cherries</div>
+
+                    <div class="item pears">
+                    <img src="images/pears.png" alt="pears picture">
+                    Pears</div>
+
+                    <div class="item plums">
+                    <img src="images/plums.png" alt="plums picture">
+                    Plums</div>
+
+                    <div class="item grapes">
+                    <img src="images/grapes.png" alt="grapes picture">
+                    Grapes</div>
+
+                    <div class="item watermelons">
+                    <img src="images/watermelons.png" alt="watermelons picture">
+                    Watermelons</div>
+
+                    <div class="item cantaloupes">
+                    <img src="images/cantalopes.png" alt="cantaloupes picture">
+                    Cantaloupes</div>
+
+                    </div>
+                </div>
+            </section>
+            <section class="vegetables">
+                <h2>Vegetables</h2>
+                <p class="text">At our farm, we are dedicated to growing a diverse array of vegetables that are both healthy and delicious. Our vegetables are cultivated using sustainable and eco-friendly methods to ensure the highest quality and flavor. Whether you are looking to create a fresh salad, cook a hearty meal, or simply enjoy a nutritious snack, our farm-fresh vegetables are the perfect choice. Taste the difference of locally grown produce with our vibrant and wholesome vegetables.</p>
+
+                <h3>Vegetables for Sale</h3>
+                <div class="text">
+                    <div id="container2">
+                        <div class="item broccoli">
+                    <img src="images/broccoli.png" alt="broccoli picture">
+                    Broccoli</div>
+
+                    <div class="item lettuce">
+                    <img src="images/lettuce.png" alt="lettuce picture">
+                    Lettuce</div>
+
+                    <div class="item eggplant">
+                    <img src="images/eggplant.png" alt="eggplant picture">
+                    Eggplant</div>
+
+                    <div class="item spinach">
+                    <img src="images/spinach.png" alt="spinach picture">
+                    Spinach</div>
+
+                    <div class="item beansprout">
+                    <img src="images/bean-sprout.png" alt="bean sprout picture">
+                    Bean Sprout</div>
+
+                    <div class="item peas">
+                    <img src="images/peas.png" alt="peas picture">
+                    Peas</div>
+
+                    <div class="item bellpepper">
+                    <img src="images/bell-pepper.png" alt="bell pepper picture">
+                    Bell Pepper</div>
+
+                    <div class="item carrot">
+                    <img src="images/carrot.png" alt="carrot picture">
+                    Carrot</div>
+
+                    <div class="item potato">
+                    <img src="images/potato.png" alt="potato picture">
+                    Potato</div>
+
+                    <div class="item cucumber">
+                    <img src="images/cucumber.png" alt="cucumber picture">
+                    Cucumber</div>
+
+                    <div class="item tomato">
+                    <img src="images/tomato.png" alt="tomato picture">
+                    Tomato</div>
+
+                    <div class="item radish">
+                    <img src="images/radish.png" alt="radish picture">
+                    Radish</div>
+
+                    </div>
+                </div>
+                </section>   
+            <div class="btn">
+            <a href="#">Top</a>
+            </div>
+    </main>
+        <section class="contact">
+            <div class="text">
+                <h2>Contact</h2>
+                <p>1234 Fake Street,
+                Mesa, AZ 85111
+                (480) 555-1234
+                </p>
+            </div>
+            <div class="text">
+                <h2>Hours</h2>
+                <p>
+                Monday- Closed
+                Tuesday- 6:00 AM - 2:00PM
+                Wednesday- 6:00 AM - 2:00PM
+                Thursday- 6:00 AM - 2:00PM
+                Friday- 6:00 AM - 9:00PM
+                Saturday- 6:00 AM - 9:00PM
+                Sunday- 6:00 AM - 5:00PM
+                </p>
+            </div>
+        </section>
+        <footer>
+            <p><small>Copyright 2024</small></p> 
+        </footer>
+    </body>
+</html>
